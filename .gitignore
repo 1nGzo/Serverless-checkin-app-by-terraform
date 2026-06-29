@@ -1,0 +1,38 @@
+# Terraform 本地缓存
+.terraform/
+.terraform.lock.hcl.backup
+
+# Terraform 状态文件，不提交
+terraform.tfstate
+terraform.tfstate.*
+*.tfplan
+tfplan
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# 本地变量文件，避免误提交敏感信息
+*.tfvars
+*.tfvars.json
+
+# AWS / 环境文件
+.env
+.env.*
+.aws/
+
+# Node 依赖
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
